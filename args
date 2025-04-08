@@ -1,0 +1,15 @@
+import java.security.PublicKey;
+import java.util.Scanner;
+
+import java.lang.System;
+import java.lang.String;
+
+class main {
+    public static void main(String args[]) {
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted
+        // to see how IntelliJ IDEA suggests fixing it.
+        Scanner demo = new Scanner(System.in);
+        String a = demo.nextLine();
+        System.out.printf(a);
+    }
+}
