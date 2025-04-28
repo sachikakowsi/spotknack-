@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class vowel {
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+
+            int n;
+            System.out.println("Enter the number of characters in the string:");
+            n = input.nextInt();
+            input.nextLine(); // consume the leftover newline
+
+            String str;
+            System.out.println("Enter the string:");
+            str = input.nextLine();
+
+            int count = 0;
+
+            for (int i = 0; i < n; i++) {
+                char ch = str.charAt(i); // get each character
+                if (isVowel(ch)) { // call function to check vowel
+                    count++;
+                }
+            }
+
+            System.out.println("The count of vowels in \"" + str + "\" is " + count);
+        }
+
+        private static boolean isVowel(char ch) {
+            ch = Character.toLowerCase(ch); // make it lowercase for easy comparison
+            return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
+        }
+    }
